@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Ticket</title>
+    <link rel="stylesheet" href="tic.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <header>
+                <h1>Manage Ticket</h1>
+            </header>
+            
+            <form id="ticket-form">
+                <div class="form-group">
+                    <label for="ticket-number">Ticket Number:</label>
+                    <input type="text" id="ticket-number" name="ticket-number" required>
+                    <small class="error" id="ticket-number-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="flight-name">Flight Name:</label>
+                    <select id="flight-name" name="flight-name" required>
+                        <option value="">Select a flight</option>
+                        <option value="Flight A">Flight A</option>
+                        <option value="Flight B">Flight B</option>
+                        <option value="Flight C">Flight C</option>
+                    </select>
+                    <small class="error" id="flight-name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="number-adults">Number of Adults:</label>
+                    <input type="number" id="number-adults" name="number-adults" min="1" required>
+                    <small class="error" id="number-adults-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="number-infants">Number of Infants:</label>
+                    <input type="number" id="number-infants" name="number-infants" min="0" required>
+                    <small class="error" id="number-infants-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="departure-time">Departure Time and Date:</label>
+                    <input type="datetime-local" id="departure-time" name="departure-time" required>
+                    <small class="error" id="departure-time-error"></small>
+                </div>
+
+                <button type="submit">Submit</button>
+                <br><br>
+                <button><a href="index.html">Back</a></button>
+            </form>
+            
+            
+        </main>
+    </div>
+
+    <script src="tic.js"></script>
+</body>
+</html>

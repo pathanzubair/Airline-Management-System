@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Customer</title>
+    <link rel="stylesheet" href="cust.css">
+</head>
+<body>
+    <div class="container">
+        
+        <main class="content">
+            <header>
+                <h1>Manage Customer</h1>
+            </header>
+            
+            <form id="customer-form">
+                <div class="form-group">
+                    <label for="cust-id">Customer ID:</label>
+                    <input type="text" id="cust-id" name="cust-id" required>
+                    <small class="error" id="cust-id-error"></small>
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <small class="error" id="first-name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    <small class="error" id="last-name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="number" id="mobile-number" name="mobile-number" required>
+                    <small class="error" id="mobile-number-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                    <small class="error" id="dob-error"></small>
+                </div>
+
+               
+
+                <button type="submit">Submit</button><br><br>
+                <button ><a href="index.html">Back</a></button>
+            </form>
+            
+        </main>
+    </div>
+
+    <script src="cust.js"></script>
+</body>
+</html>
